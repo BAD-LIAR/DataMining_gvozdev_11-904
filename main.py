@@ -12,7 +12,7 @@ from airflow.operators.python_operator import PythonOperator
 def parser():
 
     session = vk.Session(
-        access_token='2e84c7a387221cc7c10d77e28d51c7005a28e7fea2fca5222425fb3a02abe9e804e9f5f1b6504b963d3b2')
+        access_token='7d47945cb52ffd2dc3c080f16d3e58183c41cf8b437b9201bfe6ac2628a97f9f3ef9f31d3411f916310aa')
     vk_api = vk.API(session, v='5.85')
     posts = vk_api.wall.get(owner_id=-35488145, domain='https://vk.com/itis_kfu', filter='owner', count=100)
     posts2 = vk_api.wall.get(owner_id=-35488145, domain='https://vk.com/itis_kfu', filter='owner', count=100, offset=100)
