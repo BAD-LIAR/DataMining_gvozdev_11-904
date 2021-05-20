@@ -5,13 +5,13 @@ import java.util.*;
 
 public class MultiStage {
     public static void main(String[] args) throws FileNotFoundException {
-        int count = 5;
+        Scanner scanner = new Scanner(new File("D:\\DataMaining\\DataMining_gvozdev_11-904\\MultiStageAlgorithm\\src\\data\\data.txt"));
+        int count = scanner.nextInt();
 
         int[] arr = new int[count + 1];
         List<List<Integer>> lists = new ArrayList<>();
         lists.add(new ArrayList<>());
 
-        Scanner scanner = new Scanner(new File("D:\\DataMaining\\DataMining_gvozdev_11-904\\MultiStageAlgorithm\\src\\data\\data.txt"));
 
         while (scanner.hasNext()){
             String s = scanner.next();
