@@ -13,7 +13,7 @@ public class Generator {
             int size;
             Random random = new Random();
             int count = 20;
-            writer.write(count);
+            writer.write(Integer.toString(count));
             writer.newLine();
 
             for (int i = 0; i < 60; i++){
